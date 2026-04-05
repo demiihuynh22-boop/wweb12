@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Website kỉ niệm 2 người</title>
+ 
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5;
+}
+
+/* HEADER */
+header {
+    background-color: #ffd6e0;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: #ff4d6d;
+}
+
+header p {
+    font-style: italic;
+}
+
+/* Ảnh đại diện */
+header img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* SECTION */
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 15px;
+
+    max-width: 800px; /* 👈 thu gọn lại */
+    
+    border: 2px solid #ffd6e0; /* 👈 viền */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* 👈 bóng */
+}
+
+/* GRID 2 CỘT */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ITEM */
+.item {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #ffd6e0; /* viền đẹp */
+    border-radius: 12px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+/* Hover từng mục */
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Ảnh thường */
+.item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+/* Ảnh ngang nhỏ */
+.anh-ngang {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.anh-ngang img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Màu chữ */
+.highlight {
+    color: #ff4d6d;
+}
+
+.important {
+    color: #ff9900;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #ffd6e0;
+    text-align: center;
+    padding: 15px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    max-width: 400px;   /* 👈 giới hạn khung nhỏ lại */
+    margin: auto;       /* 👈 căn giữa */
+}
+
+.gallery img {
+    width: 100%;
+    height: 90px;       /* 👈 nhỏ lại */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ảnh giữa */
+.gallery img:nth-child(3) {
+    grid-column: span 2;
+    height: 120px;      /* 👈 cũng nhỏ lại */
+}
+</style>
+</head>
+
+<body>
+
+    <!-- 1. PHẦN TIÊU ĐỀ -->
+   <header>
+    <h1>Kỉ Niệm Cấp 3 Của Hiếu Diễm</h1>
+    <p>"Thanh xuân của tụi mình: học ít, cười nhiều:))."</p>
+
+    <!-- Ảnh đại diện 2 người -->
+    <img src="a.jpg" alt="Kiều Diễm">
+    <img src="b.jpg" alt="Thanh Hiếu">
+</header>
+  
+    <!-- 2. PHẦN NỘI DUNG CHÍNH -->
+    <main>
+
+        <!-- Giới thiệu -->
+        <section>
+            <!-- Giới thiệu -->
+<section>
+    <h2>Giới thiệu</h2>
+
+    <p><b>Huỳnh Thị Kiều Diễm</b> – hướng nội, ít nói</p>
+    <p><i>"Lo học đi sau ni lấy chồng đại gia "</i></p>
+
+    <p><b>Ngô Thị Thanh Hiếu</b> – năng động, hài hước</p>
+    <p><i>"Sau ni t giàu t nuôi m"</i></p>
+
+    <p>Lớp: 12/3 năm học 2025-2026</p>
+</section>
+        <!-- Kỉ niệm -->
+   <section>
+    <h2>Kỉ niệm đáng nhớ</h2>
+
+    <div class="grid">
+
+        <div class="item">
+            <h3 class="highlight">Lần đầu quen nhau</h3>
+            <img src="ld.jpg">
+            <p>Tụi mình gặp nhau trong lớp học vào một ngày rất bình thường.</p>
+            <p>Ban đầu chỉ là những câu nói chuyện xã giao nhưng dần dần trở nên thân thiết hơn.</p>
+            <p>Không ngờ từ đó lại bắt đầu một tình bạn đáng nhớ đến vậy.</p>
+        </div>
+
+        <div class="item">
+            <h3 class="highlight">Kỉ niệm trong học tập</h3>
+            <img src="ht.jpg">
+            <p>Tụi mình thường cùng nhau học bài và làm bài tập mỗi ngày.</p>
+            <p>Có lúc không hiểu bài nhưng luôn cố gắng giúp đỡ nhau.</p>
+            <p>Nhờ vậy mà cả hai đều tiến bộ và gắn bó hơn trong học tập.</p>
+        </div>
+
+        <div class="item">
+            <h3 class="highlight">Kỉ niệm vui</h3>
+            <div class="anh-ngang">
+        
+                <img src="v3.jpg">
+            </div>
+            <p>Những lúc đi chơi, đi ăn hay ngồi tám chuyện là vui nhất.</p>
+            <p>Tụi mình có thể cười suốt ngày mà không biết chán.</p>
+            <p>Chính những khoảnh khắc đó làm cho thanh xuân trở nên ý nghĩa hơn.</p>
+        </div>
+
+        <div class="item">
+            <h3 class="highlight">Một lần hiểu lầm</h3>
+            <img src="dận.png">
+            <p>Đã có lúc tụi mình giận nhau vì những chuyện nhỏ.</p>
+            <p>Khoảng thời gian đó cả hai đều cảm thấy buồn và im lặng.</p>
+            <p>Nhưng sau tất cả, tụi mình hiểu nhau hơn và càng trân trọng tình bạn này.</p>
+        </div>
+
+    </div>
+</section>
+        <!-- Gallery -->
+        <section>
+    <h2>Khoảnh khắc đáng nhớ</h2>
+
+    <div class="gallery">
+        <img src="v1.jpg">
+        <img src="g2.jpg">
+        <img src="g1.jpg">
+        <img src="g4.jpg">
+        <img src="v2.jpg">
+    </div>
+
+    <p>Những hình ảnh lưu giữ lại những kỉ niệm đẹp của tụi mình 💖</p>
+</section>
+
+    </main>
+
+    <!-- 3. PHẦN CHÂN TRANG -->
+    <footer>
+        <p>Huỳnh Thị Kiều Diễm và Ngô Thị Thanh Hiếu</p>
+        <p>Lớp 12/3</p>
+    </footer>
+
+</body>
+</html>
